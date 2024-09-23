@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "OCCT_CAD",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "OCCT_CAD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OCCT_CAD-Debug-59695c73112a6ba1a40a.json",
+					"name" : "OCCT_CAD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OCCT_CAD_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OCCT_CAD_autogen-Debug-e16bd37d4a56365c821c.json",
+					"name" : "OCCT_CAD_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OCCT_CAD_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OCCT_CAD_autogen_timestamp_deps-Debug-3bef9841ed00ed012f3f.json",
+					"name" : "OCCT_CAD_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/CLionProjects/OCCT-CAD/cmake-build-debug",
+		"source" : "E:/CLionProjects/OCCT-CAD"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,5 @@
+E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/OCCT_CAD.dir
+E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/OCCT_CAD_autogen_timestamp_deps.dir
+E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/OCCT_CAD_autogen.dir

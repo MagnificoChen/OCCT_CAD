@@ -1,0 +1,16 @@
+"E:\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S E:\CLionProjects\OCCT-CAD -B E:\CLionProjects\OCCT-CAD\cmake-build-debug
+Qt5 Found.
+VTK Found.
+CMake Warning (dev) at C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/cmake/OpenCASCADEConfig.cmake:47:
+  Syntax Warning in cmake code at column 75
+
+  Argument not separated from preceding token by whitespace.
+Call Stack (most recent call first):
+  CMakeLists.txt:44 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+OpenCASCADE Found.
+SARibbonBar Found.
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: E:/CLionProjects/OCCT-CAD/cmake-build-debug
