@@ -4,7 +4,7 @@
 #include "src/Feature/FeatureCube.h"
 #include "src/Feature/FeatureCylinder.h"
 #include "src/QDocumentManager.h"
-#include "src/QOccGeoSelector.h"
+#include "src/Dialog/Components/QOccGeoSelector.h"
 
 DialogFeatureCylinder::DialogFeatureCylinder(QWidget* parent)
     : DialogFeatureBase(parent)
@@ -56,7 +56,7 @@ void DialogFeatureCylinder::OnCancel()
 void DialogFeatureCylinder::OnOK()
 {
     auto currDocHandle = QDocumentManager::getInstance()->getCurrentDocument()->getDocumentHandle();
-    FeatureCylinder cyl;
+    FeatureCylinder cyl(QDocumentManager::getInstance()->getCurrentDocument(),1,1,1);
     cyl.addFeature();
     qDebug() << "ok pressed";
     done(QDialog::Accepted);

@@ -452,6 +452,8 @@ E:/CLionProjects/OCCT-CAD/cmake-build-debug/OCCT_CAD_autogen/44TRIECXEM/moc_Dial
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopTools_ShapeMapHasher.hxx \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_Edge.hxx \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_Face.hxx \
+  C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_HShape.hxx \
+  C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_HShape.lxx \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_ListOfShape.hxx \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_Shape.hxx \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_TShape.hxx \
@@ -635,11 +637,11 @@ E:/CLionProjects/OCCT-CAD/cmake-build-debug/OCCT_CAD_autogen/44TRIECXEM/moc_Dial
   C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/include/vtk-9.1/vtkkwiml/abi.h \
   C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/include/vtk-9.1/vtkkwiml/int.h \
   E:/CLionProjects/OCCT-CAD/src/CentralViewWidget.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccGeoSelector.h \
   E:/CLionProjects/OCCT-CAD/src/Dialog/DialogBase.h \
   E:/CLionProjects/OCCT-CAD/src/Feature/FeatureBase.h \
   E:/CLionProjects/OCCT-CAD/src/GlobalDefines.h \
   E:/CLionProjects/OCCT-CAD/src/QOccDocument.h \
-  E:/CLionProjects/OCCT-CAD/src/QOccGeoSelector.h \
   E:/CLionProjects/OCCT-CAD/src/Render/QOccVtkInteractorStyle.h \
   E:/CLionProjects/OCCT-CAD/src/Render/QOccVtkSelPipeline.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/QObject \

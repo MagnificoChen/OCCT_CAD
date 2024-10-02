@@ -3,7 +3,7 @@
 #include "DialogInputPosition.h"
 #include "src/Feature/FeatureCube.h"
 #include "src/QDocumentManager.h"
-#include "src/QOccGeoSelector.h"
+#include "src/Dialog/Components/QOccGeoSelector.h"
 
 DialogFeatureCube::DialogFeatureCube(QWidget* parent)
     : DialogFeatureBase(parent)
@@ -63,9 +63,9 @@ void DialogFeatureCube::OnCancel()
 
 void DialogFeatureCube::OnOK()
 {
-    auto currDocHandle = QDocumentManager::getInstance()->getCurrentDocument()->getDocumentHandle();
-    FeatureCube cube;
-    cube.addFeature();
+    auto currDoc = QDocumentManager::getInstance()->getCurrentDocument();
+    auto cube = std::make_shared<FeatureCube>(currDoc,1,1,1);
+    cube->createRenderPipeline();
     qDebug() << "ok pressed";
     done(QDialog::Accepted);
 }

@@ -543,6 +543,7 @@ E:/CLionProjects/OCCT-CAD/cmake-build-debug/OCCT_CAD_autogen/ZWUBL5KLYD/moc_Grid
   C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/include/vtk-9.1/vtkkwiml/abi.h \
   C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/include/vtk-9.1/vtkkwiml/int.h \
   E:/CLionProjects/OCCT-CAD/src/CentralViewWidget.h \
+  E:/CLionProjects/OCCT-CAD/src/Frame/MessageRouter.h \
   E:/CLionProjects/OCCT-CAD/src/GlobalDefines.h \
   E:/CLionProjects/OCCT-CAD/src/QOccGeoSelector.h \
   E:/CLionProjects/OCCT-CAD/src/Render/QOccVtkInteractorStyle.h \

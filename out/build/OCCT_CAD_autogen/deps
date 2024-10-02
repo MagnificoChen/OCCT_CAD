@@ -489,6 +489,8 @@ OCCT_CAD_autogen/timestamp: \
 	C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopTools_MapOfShape.hxx \
 	C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopTools_SequenceOfShape.hxx \
 	C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopTools_ShapeMapHasher.hxx \
+	C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS.hxx \
+	C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS.lxx \
 	C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_Edge.hxx \
 	C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_Face.hxx \
 	C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_ListOfShape.hxx \
@@ -711,41 +713,62 @@ OCCT_CAD_autogen/timestamp: \
 	C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/vtkObjectFactory.cmake \
 	C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/vtkTopologicalSort.cmake \
 	E:/CLionProjects/OCCT-CAD/CMakeLists.txt \
+	E:/CLionProjects/OCCT-CAD/image/resource.qrc \
 	E:/CLionProjects/OCCT-CAD/out/build/CMakeFiles/3.29.5-msvc4/CMakeCCompiler.cmake \
 	E:/CLionProjects/OCCT-CAD/out/build/CMakeFiles/3.29.5-msvc4/CMakeCXXCompiler.cmake \
 	E:/CLionProjects/OCCT-CAD/out/build/CMakeFiles/3.29.5-msvc4/CMakeRCCompiler.cmake \
 	E:/CLionProjects/OCCT-CAD/out/build/CMakeFiles/3.29.5-msvc4/CMakeSystem.cmake \
 	E:/CLionProjects/OCCT-CAD/src/CentralViewWidget.cpp \
 	E:/CLionProjects/OCCT-CAD/src/CentralViewWidget.h \
-	E:/CLionProjects/OCCT-CAD/src/DialogBase.cpp \
-	E:/CLionProjects/OCCT-CAD/src/DialogBase.h \
-	E:/CLionProjects/OCCT-CAD/src/DialogFeatureBase.cpp \
-	E:/CLionProjects/OCCT-CAD/src/DialogFeatureBase.h \
-	E:/CLionProjects/OCCT-CAD/src/DialogFeatureCube.cpp \
-	E:/CLionProjects/OCCT-CAD/src/DialogFeatureCube.h \
-	E:/CLionProjects/OCCT-CAD/src/DialogFeatureCylinder.cpp \
-	E:/CLionProjects/OCCT-CAD/src/DialogFeatureCylinder.h \
-	E:/CLionProjects/OCCT-CAD/src/DialogFeatureSphere.cpp \
-	E:/CLionProjects/OCCT-CAD/src/DialogFeatureSphere.h \
-	E:/CLionProjects/OCCT-CAD/src/DialogInputPosition.cpp \
-	E:/CLionProjects/OCCT-CAD/src/DialogInputPosition.h \
-	E:/CLionProjects/OCCT-CAD/src/DocumentTreeItemModel.cpp \
-	E:/CLionProjects/OCCT-CAD/src/DocumentTreeItemModel.h \
-	E:/CLionProjects/OCCT-CAD/src/FeatureBase.cpp \
-	E:/CLionProjects/OCCT-CAD/src/FeatureBase.h \
-	E:/CLionProjects/OCCT-CAD/src/FeatureCube.cpp \
-	E:/CLionProjects/OCCT-CAD/src/FeatureCube.h \
-	E:/CLionProjects/OCCT-CAD/src/FeatureCylinder.cpp \
-	E:/CLionProjects/OCCT-CAD/src/FeatureCylinder.h \
-	E:/CLionProjects/OCCT-CAD/src/FeatureSphere.cpp \
-	E:/CLionProjects/OCCT-CAD/src/FeatureSphere.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccEdgeSelector.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccEdgeSelector.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccFaceSelector.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccFaceSelector.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccGeoSelector.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccGeoSelector.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccPointSelector.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccPointSelector.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccShapeSelector.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccShapeSelector.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccVertexSelector.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccVertexSelector.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogBase.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogBase.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureBase.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureBase.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureChamfer.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureChamfer.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureCube.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureCube.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureCylinder.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureCylinder.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureSphere.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureSphere.h \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogInputPosition.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Dialog/DialogInputPosition.h \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureAttach.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureAttach.h \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureBase.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureBase.h \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureChamfer.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureChamfer.h \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureCube.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureCube.h \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureCylinder.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureCylinder.h \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureIsolate.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureIsolate.h \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureMerge.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureMerge.h \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureSphere.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Feature/FeatureSphere.h \
+	E:/CLionProjects/OCCT-CAD/src/Frame/MessageRouter.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Frame/MessageRouter.h \
 	E:/CLionProjects/OCCT-CAD/src/GlobalDefines.h \
-	E:/CLionProjects/OCCT-CAD/src/GridItemBase.cpp \
-	E:/CLionProjects/OCCT-CAD/src/GridItemBase.h \
-	E:/CLionProjects/OCCT-CAD/src/GridItemGeoSelector.cpp \
-	E:/CLionProjects/OCCT-CAD/src/GridItemGeoSelector.h \
-	E:/CLionProjects/OCCT-CAD/src/LeftTreeViewWidget.cpp \
-	E:/CLionProjects/OCCT-CAD/src/LeftTreeViewWidget.h \
+	E:/CLionProjects/OCCT-CAD/src/ModelTree/DocumentTreeItemModel.cpp \
+	E:/CLionProjects/OCCT-CAD/src/ModelTree/DocumentTreeItemModel.h \
+	E:/CLionProjects/OCCT-CAD/src/ModelTree/LeftTreeViewWidget.cpp \
+	E:/CLionProjects/OCCT-CAD/src/ModelTree/LeftTreeViewWidget.h \
 	E:/CLionProjects/OCCT-CAD/src/OccDemoMainWindow.cpp \
 	E:/CLionProjects/OCCT-CAD/src/OccDemoMainWindow.h \
 	E:/CLionProjects/OCCT-CAD/src/QDialogManager.cpp \
@@ -754,23 +777,20 @@ OCCT_CAD_autogen/timestamp: \
 	E:/CLionProjects/OCCT-CAD/src/QDocumentManager.h \
 	E:/CLionProjects/OCCT-CAD/src/QOccDocument.cpp \
 	E:/CLionProjects/OCCT-CAD/src/QOccDocument.h \
-	E:/CLionProjects/OCCT-CAD/src/QOccGeoSelector.cpp \
-	E:/CLionProjects/OCCT-CAD/src/QOccGeoSelector.h \
 	E:/CLionProjects/OCCT-CAD/src/QOccPlanePointSelector.cpp \
 	E:/CLionProjects/OCCT-CAD/src/QOccPlanePointSelector.h \
-	E:/CLionProjects/OCCT-CAD/src/QOccVtkInteractorStyle.cpp \
-	E:/CLionProjects/OCCT-CAD/src/QOccVtkInteractorStyle.h \
-	E:/CLionProjects/OCCT-CAD/src/QOccVtkSelPipeline.cpp \
-	E:/CLionProjects/OCCT-CAD/src/QOccVtkSelPipeline.h \
+	E:/CLionProjects/OCCT-CAD/src/Render/QOccVtkInteractorStyle.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Render/QOccVtkInteractorStyle.h \
+	E:/CLionProjects/OCCT-CAD/src/Render/QOccVtkSelPipeline.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Render/QOccVtkSelPipeline.h \
+	E:/CLionProjects/OCCT-CAD/src/Render/vtkSelectableCoordinate.cpp \
+	E:/CLionProjects/OCCT-CAD/src/Render/vtkSelectableCoordinate.h \
 	E:/CLionProjects/OCCT-CAD/src/main.cpp \
-	E:/CLionProjects/OCCT-CAD/src/vtkSelectableCoordinate.cpp \
-	E:/CLionProjects/OCCT-CAD/src/vtkSelectableCoordinate.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/QDebug \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/QFile \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/QObject \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/QPointer \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/QScopedPointer \
-	E:/Qt/5.15.2/msvc2019_64/include/QtCore/QSignalMapper \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/QVariant \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/QtGlobal \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/qabstractitemmodel.h \
@@ -828,7 +848,6 @@ OCCT_CAD_autogen/timestamp: \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/qshareddata.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/qsharedpointer.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/qsharedpointer_impl.h \
-	E:/Qt/5.15.2/msvc2019_64/include/QtCore/qsignalmapper.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/qsize.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/qstring.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtCore/qstringalgorithms.h \
@@ -886,6 +905,7 @@ OCCT_CAD_autogen/timestamp: \
 	E:/Qt/5.15.2/msvc2019_64/include/QtGui/qwindowdefs.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtGui/qwindowdefs_win.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/QAction \
+	E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/QComboBox \
 	E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/QDialog \
 	E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/QDialogButtonBox \
 	E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/QDockWidget \
@@ -919,6 +939,7 @@ OCCT_CAD_autogen/timestamp: \
 	E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qaction.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qactiongroup.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qboxlayout.h \
+	E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qcombobox.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qdialog.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qdialogbuttonbox.h \
 	E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qdockwidget.h \

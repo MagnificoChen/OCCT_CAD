@@ -1,11 +1,17 @@
 ﻿#pragma once
-#include "FeatureBase.h"
+#include "FeatureIsolate.h"
 
-class FeatureSphere : public FeatureBase
+class FeatureSphere : public FeatureIsolate
 {
 public:
 
-    FeatureSphere(double radius = 5);
+    FeatureSphere(QOccDocument* mDoc, double radius = 5);
 
+    ~FeatureSphere() override;
+
+    void addFeature() override;
+
+private:
+    double m_radius = 5;
 };
 

@@ -27,6 +27,7 @@
         <file>resource/cube.png</file>
         <file>resource/deSelect.png</file>
         <file>resource/cylinder.png</file>
+        <file>resource/chamfer.png</file>
     </qresource>
     <qresource prefix="/theme">
         <file>resource/theme-win7.qss</file>

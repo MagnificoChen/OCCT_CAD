@@ -70,18 +70,16 @@ public:
     /**
      * @brief Constructs a QIVtkSelectionPipeline for a given shape and shape ID.
      * @param theShape The TopoDS_Shape to be managed by this pipeline.
-     * @param theShapeID The ID of the shape.
+     * @param theTag The ID of the shape.
      */
     QOccVtkSelPipeline(const TopoDS_Shape& theShape,
-                       const Standard_Integer theShapeID);
+                       const Standard_Integer theTag);
 
     /**
      * @brief Destructor for QIVtkSelectionPipeline.
      * Cleans up any resources used by the instance.
      */
-    ~QOccVtkSelPipeline()
-    {
-    }
+    ~QOccVtkSelPipeline();
 
     /**
      * @brief Adds the actor to the specified renderer.
@@ -151,6 +149,13 @@ public:
      * @param colorsTable The color lookup table to be used.
      */
     void updatePrimaryPipeline(vtkLookupTable* colorsTable);
+
+
+
+    Standard_Integer GetShapeID(){
+        return _shapeID;
+    }
+
     /**
     * @brief Updates the transformed datasource.
     */

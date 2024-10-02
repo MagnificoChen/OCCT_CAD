@@ -43,11 +43,12 @@ public slots:
 
     bool LoadGeometry(const QString& filePath, FileFormat format);
     //Support QtMDIWindow 
-    bool OnChangeDocument(int tag);
+    bool OnChangeCurDocument(QOccDocument* doc);
 
     //generate a unique name for all imported shapes
     static std::string _getUniqueObjectName(const std::string& prefix, const std::map<QString, TopoDS_Shape>& objectMap);
 
+    QOccDocument* getDocumentByTag(int tag);
 signals:
     // To CentralViewWidget
     void signalUpdateView();
@@ -56,5 +57,6 @@ private:
     Handle(XCAFApp_Application) m_app;
     QOccDocument* m_currDocument = nullptr;
     std::vector<std::pair<Handle(TDocStd_Document), TDF_Label>> m_documents;
+
     std::vector<QOccDocument*> m_docPtrArray;
 };

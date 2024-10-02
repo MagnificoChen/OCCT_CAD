@@ -13,9 +13,14 @@ public:
     bool AddFeatureToDocument();
 public:
     QVBoxLayout* m_vLayout;
+    bool AddSelector(QOccGeoSelector* selector);
+
+public slots:
+    void DisableAllSelector();
+protected:
+    std::vector<QOccGeoSelector*> selectors;
 
 private:
     FeatureBase* feature_to_be_added;
-
 };
 

@@ -1,6 +1,7 @@
 ﻿#include "DialogBase.h"
 
 #include "src/CentralViewWidget.h"
+#include "src/OccDemoMainWindow.h"
 
 
 DialogBase::DialogBase(QWidget* parent, ButtonType type) : QDialog(parent)
@@ -9,6 +10,7 @@ DialogBase::DialogBase(QWidget* parent, ButtonType type) : QDialog(parent)
     setMinimumSize({ 200,200 });
     setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
     initializeButtons(type);
+    ownerWidget = OccDemoMainWindow::getInstance()->GetActiveViewWidget();
 
 }
 
@@ -85,6 +87,7 @@ bool DialogBase::eventFilter(QObject* obj, QEvent* event)
     }
     return QDialog::eventFilter(obj, event);
 }
+
 
 
 

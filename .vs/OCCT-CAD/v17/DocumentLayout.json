@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "E:\\CLionProjects\\OCCT-CAD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\85147\\Desktop\\CodingEnv\\OpenCascade\\OCCT-install-release\\inc\\TopoDS_Shape.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\CLionProjects\\OCCT-CAD\\CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMakeLists.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -30,19 +33,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TopoDS_Shape.hxx",
+              "DocumentMoniker": "C:\\Users\\85147\\Desktop\\CodingEnv\\OpenCascade\\OCCT-install-release\\inc\\TopoDS_Shape.hxx",
+              "ToolTip": "C:\\Users\\85147\\Desktop\\CodingEnv\\OpenCascade\\OCCT-install-release\\inc\\TopoDS_Shape.hxx",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAqwIIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-28T16:28:25.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CMakeLists.txt",
               "DocumentMoniker": "E:\\CLionProjects\\OCCT-CAD\\CMakeLists.txt",
               "RelativeDocumentMoniker": "CMakeLists.txt",
               "ToolTip": "E:\\CLionProjects\\OCCT-CAD\\CMakeLists.txt",
               "RelativeToolTip": "CMakeLists.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-09-22T16:23:41.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "launch.vs.json",
               "DocumentMoniker": "E:\\CLionProjects\\OCCT-CAD\\.vs\\launch.vs.json",
               "RelativeDocumentMoniker": ".vs\\launch.vs.json",
@@ -55,13 +69,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CMake \u6982\u8FF0\u9875",
               "DocumentMoniker": "CMake \u6982\u8FF0\u9875",
               "ToolTip": "CMake \u6982\u8FF0\u9875",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-09-22T14:33:29.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T14:33:29.323Z"
             }
           ]
         },

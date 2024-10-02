@@ -36,6 +36,7 @@
 #include <unordered_set>
 
 #include "src/Render/QOccVtkInteractorStyle.h"
+#include "src/Render/QOccVtkSelPipeline.h"
 
 class QOccDocument;
 class QOccVtkInteractorStyle;
@@ -52,14 +53,12 @@ public:
     void SetDocument(QOccDocument* doc);
     void _initializeAxis();
 
-    /**
-     * 
-     * @param shape wrap TopoDS_Shape to SelPipeline, then add it to renderer and document.
-     */
-    void addShapeToRenderer(const TopoDS_Shape& shape);
 
-    void _traverseShapesRender(const Handle(XCAFDoc_ShapeTool)& shapeTool, const TDF_Label& label);
-    void _fitView();
+    /// Add pipeline to InteractorStyle and Renderer.
+    /// \param pipeline pipeline to add
+    void addPipelineToRenderer(Handle(QOccVtkSelPipeline) pipeline);
+
+    void FitView();
    
     void _initInteractor();
     /**
@@ -72,6 +71,7 @@ public:
      * @param hasPlanes 是否显示坐标系平面
      */
     void _initializeCoordSystem(bool hasPlanes);
+
 signals:
     /**
      * signal for coordinate system selected
@@ -88,9 +88,9 @@ public slots:
 
     // Getters and setters
 public:
-    [[nodiscard]] vtkSmartPointer<QOccVtkInteractorStyle> getInteractorStyle() const
+    [[nodiscard]] vtkSmartPointer<QOccVtkInteractorStyle> getPickInteractorStyle() const
     {
-        return m_interactorStyle;
+        return m_pickInteractorStyle;
     }
 
     [[nodiscard]] vtkSmartPointer<vtkRenderWindowInteractor> getInteractor() const
@@ -126,8 +126,8 @@ private:
     // ! The VTK render window interactor
     vtkSmartPointer<vtkRenderWindowInteractor> m_interactor;
 
-    // ! Custom interactor style
-    vtkSmartPointer<QOccVtkInteractorStyle> m_interactorStyle;
+    // ! Picking interactor style
+    vtkSmartPointer<QOccVtkInteractorStyle> m_pickInteractorStyle;
 
     // ! IVtk_ShapePicker from OCC VIS
     vtkSmartPointer<IVtkTools_ShapePicker> m_shapePicker;
@@ -135,5 +135,6 @@ private:
     NCollection_DataMap<IVtk_IdType, IVtk_ShapeIdList*> _selectedSubShapeIdsMap;
 
     IVtk_SelectionMode _currentSelectionMode = SM_None;
+
 
 };

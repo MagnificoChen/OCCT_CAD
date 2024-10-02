@@ -1,7 +1,7 @@
 ﻿#include "DialogFeatureSphere.h"
 #include "QDebug"
 #include "src/Feature/FeatureSphere.h"
-#include "src/QOccGeoSelector.h"
+#include "src/Dialog/Components/QOccGeoSelector.h"
 
 DialogFeatureSphere::DialogFeatureSphere(QWidget* parent)
     : DialogBase(parent, OkCancel)
@@ -44,11 +44,6 @@ DialogFeatureSphere::DialogFeatureSphere(QWidget* parent)
     layout->addWidget(m_cubeZSpinbox, 2);
     GetMainLayout()->insertLayout(3, layout);
 
-    m_selector = new QOccGeoSelector(SM_Vertex);
-    m_selector->setSelectModeChangeable(true);
-    m_selector->setCapacity(5);
-
-    GetMainLayout()->insertWidget(0, m_selector);
 }
 
 DialogFeatureSphere::~DialogFeatureSphere()
@@ -66,17 +61,16 @@ void DialogFeatureSphere::OnCancel()
 
 void DialogFeatureSphere::OnOK()
 {
-    auto currDocHandle = QDocumentManager::getInstance()->getCurrentDocument()->getDocumentHandle();
+    auto currDoc = QDocumentManager::getInstance()->getCurrentDocument();
 
-    FeatureSphere sphere(m_cubeRadiusSpinbox->value());
-    sphere.addFeature();
-    
+    FeatureSphere sphere(currDoc,m_cubeRadiusSpinbox->value());
+
     sphere.SetPosition({
         m_cubeXSpinbox->value(), m_cubeYSpinbox->value(), m_cubeZSpinbox->value()
     });
 
     qDebug() << "ok pressed";
-    QDocumentManager::getInstance()->getCurrentDocument()->getCentralWidget()->UpdateView();
+    currDoc->getCentralWidget()->UpdateView();
     done(QDialog::Accepted);
 }
 

@@ -35,7 +35,7 @@
 #include <IVtkTools_SubPolyDataFilter.hxx>
 
 #include "src/CentralViewWidget.h"
-#include "src/QOccGeoSelector.h"
+#include "src/Dialog/Components/QOccGeoSelector.h"
 #include "QOccVtkSelPipeline.h"
 
 class QOccVtkInteractorStyle : public vtkInteractorStyleTrackballCamera
@@ -61,6 +61,7 @@ protected:
 
     //Class functions
 public:
+
     void createContextMenu();
     void setSelectionMode(IVtk_SelectionMode mode);
     void OnSelection(Standard_Boolean appendId);
@@ -71,6 +72,7 @@ public:
     void setOwnerWidget(CentralViewWidget* widget);
     void setCurrSelector(QOccGeoSelector* selector);
     void clearCurrSelector();
+    void clearShapeMaps();
     /**
     * @brief Adds a selection pipeline to the interactor style.
     * @param pipeline A handle to the QIVtkSelectionPipeline.

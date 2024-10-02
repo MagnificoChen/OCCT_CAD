@@ -39,7 +39,8 @@
 		"E:/CLionProjects/OCCT-CAD/image/resource/Titlebar_Close.svg",
 		"E:/CLionProjects/OCCT-CAD/image/resource/Titlebar_Normal_Hover.svg",
 		"E:/CLionProjects/OCCT-CAD/image/resource/Titlebar_Normal.svg",
-		"E:/CLionProjects/OCCT-CAD/image/resource/Titlebar_Max_Hover.svg"
+		"E:/CLionProjects/OCCT-CAD/image/resource/Titlebar_Max_Hover.svg",
+		"E:/CLionProjects/OCCT-CAD/image/resource/chamfer.png"
 	],
 	"LOCK_FILE" : "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/OCCT_CAD_autogen.dir/AutoRcc_resource_LYI5KOYLNB_Lock.lock",
 	"MULTI_CONFIG" : false,

@@ -241,12 +241,6 @@ Qt5Sql_DIR:PATH=E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Sql
 //The directory containing a CMake configuration file for Qt5Widgets.
 Qt5Widgets_DIR:PATH=E:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets
 
-//The directory containing a CMake configuration file for SARibbonBar.
-SARibbonBar_DIR:PATH=SARibbonBar_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for VTK.
-VTK_DIR:PATH=VTK_DIR-NOTFOUND
-
 
 ########################
 # INTERNAL cache entries

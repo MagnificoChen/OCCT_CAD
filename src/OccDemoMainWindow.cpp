@@ -5,14 +5,13 @@
 #include "QDocumentManager.h"
 #include "vtkOpenGLRenderWindow.h"
 #include "QVTKOpenGLNativeWidget.h"
+#include "src/Dialog/DialogFeatureChamfer.h"
 
 OccDemoMainWindow* OccDemoMainWindow::instance = nullptr;
 
 
-OccDemoMainWindow* OccDemoMainWindow::getInstance()
-{
-    if (!instance)
-    {
+OccDemoMainWindow* OccDemoMainWindow::getInstance() {
+    if (!instance) {
         instance = new OccDemoMainWindow();
     }
     return instance;
@@ -20,8 +19,7 @@ OccDemoMainWindow* OccDemoMainWindow::getInstance()
 
 
 OccDemoMainWindow::OccDemoMainWindow(QWidget* parent)
-    : SARibbonMainWindow(parent)
-{
+        : SARibbonMainWindow(parent) {
     instance = this;
 
     setMinimumSize({800, 600});
@@ -69,13 +67,11 @@ OccDemoMainWindow::OccDemoMainWindow(QWidget* parent)
     ConnectSignalAndSlots();
 }
 
-OccDemoMainWindow::~OccDemoMainWindow()
-{
+OccDemoMainWindow::~OccDemoMainWindow() {
 }
 
-void OccDemoMainWindow::_initializeRibbonBarButtons()
-{
-    SARibbonPannel* panel_files = m_categoryMain->addPannel(("Files"));
+void OccDemoMainWindow::_initializeRibbonBarButtons() {
+    panel_files = m_categoryMain->addPannel(("Files"));
 
     QAction* pAction = nullptr;
 
@@ -121,7 +117,7 @@ void OccDemoMainWindow::_initializeRibbonBarButtons()
     panel_files->addLargeAction(pAction, QToolButton::MenuButtonPopup);
 
 
-    SARibbonPannel* panel_feature2D = m_categoryMain->addPannel(("2D Features"));
+    panel_feature2D = m_categoryMain->addPannel(("2D Features"));
     //草图
     pAction = new QAction(this);
     pAction->setText("Sketch");
@@ -143,7 +139,7 @@ void OccDemoMainWindow::_initializeRibbonBarButtons()
     panel_feature2D->addLargeAction(pAction);
 
 
-    SARibbonPannel* panel_feature3D = m_categoryMain->addPannel(("3D Features"));
+    panel_feature3D = m_categoryMain->addPannel(("3D Features"));
     //球体
     pAction = new QAction(this);
     pAction->setText("Sphere");
@@ -167,7 +163,7 @@ void OccDemoMainWindow::_initializeRibbonBarButtons()
     connect(pAction, &QAction::triggered, this, &OccDemoMainWindow::OnOpenCylinderDialog);
 
 
-    SARibbonPannel* panel_basic = m_categoryMain->addPannel(("Basic"));
+    panel_basic = m_categoryMain->addPannel(("Basic"));
     pAction = new QAction(this);
     pAction->setText("Extrusion");
     pAction->setIcon(QIcon(":/image/resource/extrusion.png"));
@@ -180,6 +176,13 @@ void OccDemoMainWindow::_initializeRibbonBarButtons()
     pAction->setObjectName("actOpenDlgSweep");
     panel_basic->addLargeAction(pAction);
 
+    pAction = new QAction(this);
+    pAction->setText("Chamfer");
+    pAction->setIcon(QIcon(":/image/resource/chamfer.png"));
+    pAction->setObjectName("actOpenDlgChamfer");
+    panel_basic->addLargeAction(pAction);
+    connect(pAction, &QAction::triggered, this, &OccDemoMainWindow::OnOpenChamferDialog);
+
 
     //QuickAccessBar
     pAction = new QAction(this);
@@ -187,34 +190,45 @@ void OccDemoMainWindow::_initializeRibbonBarButtons()
     pAction->setObjectName("actNewDoc");
     connect(pAction, &QAction::triggered, this, &OccDemoMainWindow::OnNewMDIWindow);
     m_ribbonBar->quickAccessBar()->addAction(pAction);
+
+    //初始化时，功能性按钮不可用。
+    for (auto item: panel_feature2D->ribbonToolButtons()) {
+        item->setEnabled(false);
+    }
+    for (auto item: panel_feature3D->ribbonToolButtons()) {
+        item->setEnabled(false);
+    }
+    for (auto item: panel_basic->ribbonToolButtons()) {
+        item->setEnabled(false);
+    }
 }
 
-void OccDemoMainWindow::OnOpenSphereDialog()
-{
+void OccDemoMainWindow::OnOpenSphereDialog() {
     auto dialog = new DialogFeatureSphere(this);
     m_dialogManager->OpenDialog(dialog);
 }
 
-void OccDemoMainWindow::OnOpenCubeDialog()
-{
+void OccDemoMainWindow::OnOpenCubeDialog() {
     auto dialog = new DialogFeatureCube(this);
     m_dialogManager->OpenDialog(dialog);
 }
 
-void OccDemoMainWindow::OnOpenCylinderDialog()
-{
+void OccDemoMainWindow::OnOpenCylinderDialog() {
     auto dialog = new DialogFeatureCylinder(this);
     m_dialogManager->OpenDialog(dialog);
 }
 
-QMdiArea* OccDemoMainWindow::getMdiArea() const
-{
+void OccDemoMainWindow::OnOpenChamferDialog() {
+    auto dialog = new DialogFeatureChamfer(this);
+    m_dialogManager->OpenDialog(dialog);
+}
+
+QMdiArea* OccDemoMainWindow::getMdiArea() const {
     return m_mdiArea;
 }
 
 //新建MDI窗口
-bool OccDemoMainWindow::OnNewMDIWindow()
-{
+bool OccDemoMainWindow::OnNewMDIWindow() {
     auto win = new CentralViewWidget();
 
     // 创建MDI窗口
@@ -223,14 +237,14 @@ bool OccDemoMainWindow::OnNewMDIWindow()
     win->setFocus();
     //创建Doc文档
     emit signalAddNewDocument(false, QString());
-    connect(QDocumentManager::getInstance(), &QDocumentManager::signalUpdateView, win, &CentralViewWidget::UpdateView);
+    connect(QDocumentManager::getInstance(), &QDocumentManager::signalUpdateView, win, &CentralViewWidget::UpdateView,
+            Qt::DirectConnection);
     //创建View
 
     return true;
 }
 
-void OccDemoMainWindow::ConnectSignalAndSlots()
-{
+void OccDemoMainWindow::ConnectSignalAndSlots() {
     //添加/加载Document
     connect(this, &OccDemoMainWindow::signalAddNewDocument, QDocumentManager::getInstance(),
             &QDocumentManager::OnNewDocument);
@@ -243,14 +257,12 @@ void OccDemoMainWindow::ConnectSignalAndSlots()
     //切换SubWindow/Document
     connect(m_mdiArea, &QMdiArea::subWindowActivated, this, &OccDemoMainWindow::OnChangeSubWindow);
     connect(this, &OccDemoMainWindow::signalChangeCurrDocument, QDocumentManager::getInstance(),
-            &QDocumentManager::OnChangeDocument);
+            &QDocumentManager::OnChangeCurDocument);
 }
 
-bool OccDemoMainWindow::OnSaveDocument()
-{
+bool OccDemoMainWindow::OnSaveDocument() {
     QString filePath = QFileDialog::getSaveFileName(this, tr("Save As"), "", tr("New Document Files (*.cbf)"));
-    if (!filePath.isEmpty())
-    {
+    if (!filePath.isEmpty()) {
         //处理Path
         QFileInfo fileInfo(filePath);
         QString fileName = fileInfo.fileName();
@@ -263,11 +275,9 @@ bool OccDemoMainWindow::OnSaveDocument()
     return false;
 }
 
-bool OccDemoMainWindow::OnLoadDocument()
-{
+bool OccDemoMainWindow::OnLoadDocument() {
     QString filePath = QFileDialog::getOpenFileName(this, tr("Load"), ".", tr("STereoLithography Files (*.cbf)"));
-    if (!filePath.isEmpty())
-    {
+    if (!filePath.isEmpty()) {
         emit signalAddNewDocument(true, filePath);
         return true;
     }
@@ -275,19 +285,13 @@ bool OccDemoMainWindow::OnLoadDocument()
     return false;
 }
 
-bool OccDemoMainWindow::OnLoadSTL()
-{
+bool OccDemoMainWindow::OnLoadSTL() {
     QString filePath = _OpenFileDialog(STL);
-    if (!filePath.isEmpty())
-    {
+    if (!filePath.isEmpty()) {
         auto result = QMessageBox::information(this, "提示", "在新窗口中导入？", QMessageBox::Yes | QMessageBox::No);
-        if (result == QMessageBox::StandardButton::Yes)
-        {
+        if (result == QMessageBox::StandardButton::Yes) {
             OnNewMDIWindow();
-        }
-        else
-        {
-            ;
+        } else { ;
         }
 
         emit signalLoadGeometry(filePath, STL);
@@ -297,20 +301,14 @@ bool OccDemoMainWindow::OnLoadSTL()
     return false;
 }
 
-bool OccDemoMainWindow::OnLoadSTEP()
-{
+bool OccDemoMainWindow::OnLoadSTEP() {
     QString filePath = _OpenFileDialog(STEP);
-    if (!filePath.isEmpty())
-    {
+    if (!filePath.isEmpty()) {
         auto result = QMessageBox::information(
-            this, "提示", "在新窗口中导入？", QMessageBox::Yes | QMessageBox::No);
-        if (m_lastActiveSubWindow == nullptr | result == QMessageBox::StandardButton::Yes)
-        {
+                this, "提示", "在新窗口中导入？", QMessageBox::Yes | QMessageBox::No);
+        if (m_lastActiveSubWindow == nullptr | result == QMessageBox::StandardButton::Yes) {
             OnNewMDIWindow();
-        }
-        else
-        {
-            ;
+        } else { ;
         }
 
         emit signalLoadGeometry(filePath, STEP);
@@ -320,28 +318,22 @@ bool OccDemoMainWindow::OnLoadSTEP()
     return false;
 }
 
-QString OccDemoMainWindow::_OpenFileDialog(FileFormat f)
-{
+QString OccDemoMainWindow::_OpenFileDialog(FileFormat f) {
     QString filter;
-    switch (f)
-    {
-    case CBF:
-        {
+    switch (f) {
+        case CBF: {
             filter = "STereoLithography Files (*.cbf)";
             break;
         }
-    case STL:
-        {
+        case STL: {
             filter = "STereoLithography Files (*.stl)";
             break;
         }
-    case STEP:
-        {
+        case STEP: {
             filter = "STEP Files (*.stp) ;; STEP Files (*.step)";
             break;
         }
-    default:
-        {
+        default: {
             filter = " ALL files (*)";
             break;
         }
@@ -349,8 +341,7 @@ QString OccDemoMainWindow::_OpenFileDialog(FileFormat f)
     return QFileDialog::getOpenFileName(this, tr("Import Geometry"), ".", filter);
 }
 
-void OccDemoMainWindow::_initializeTreeDockWindow()
-{
+void OccDemoMainWindow::_initializeTreeDockWindow() {
     m_treeDock = new QDockWidget(this);
     m_treeViewWidget = new LeftTreeViewWidget();
     m_treeDock->setWindowTitle("模型树");
@@ -359,57 +350,74 @@ void OccDemoMainWindow::_initializeTreeDockWindow()
     addDockWidget(Qt::LeftDockWidgetArea, m_treeDock);
 }
 
-void OccDemoMainWindow::OnChangeSubWindow(QMdiSubWindow* subWin)
-{
+void OccDemoMainWindow::OnChangeSubWindow(QMdiSubWindow* subWin) {
     //类型转换需要确定取到的widget是否是CentralViewWidget。
 
     if (m_mdiArea->activeSubWindow() &&
         m_mdiArea->activeSubWindow()->widget() &&
-        m_viewDocMap.contains(static_cast<CentralViewWidget*>(m_mdiArea->activeSubWindow()->widget())) &&
-        subWin != m_lastActiveSubWindow)
-    {
-        signalChangeCurrDocument(m_viewDocMap[static_cast<CentralViewWidget*>(subWin->widget())]);
+        _viewDocMap.contains(static_cast<CentralViewWidget*>(m_mdiArea->activeSubWindow()->widget())) &&
+        subWin != m_lastActiveSubWindow) {
+        signalChangeCurrDocument(_viewDocMap[static_cast<CentralViewWidget*>(subWin->widget())]);
         m_lastActiveSubWindow = subWin;
         //不管如何，都需要关闭当前对话框。
         QDialogManager::getInstance()->closeCurrDialog();
         m_treeViewWidget->Update();
         m_treeViewWidget->load();
     }
+
+    if (!subWin) {
+        for (auto item: panel_feature2D->ribbonToolButtons()) {
+            item->setEnabled(false);
+        }
+        for (auto item: panel_feature3D->ribbonToolButtons()) {
+            item->setEnabled(false);
+        }
+        for (auto item: panel_basic->ribbonToolButtons()) {
+            item->setEnabled(false);
+        }
+    }else{
+        for (auto item: panel_feature2D->ribbonToolButtons()) {
+            item->setEnabled(true);
+        }
+        for (auto item: panel_feature3D->ribbonToolButtons()) {
+            item->setEnabled(true);
+        }
+        for (auto item: panel_basic->ribbonToolButtons()) {
+            item->setEnabled(true);
+        }
+    }
 }
 
-CentralViewWidget* OccDemoMainWindow::GetActiveViewWidget()
-{
+CentralViewWidget* OccDemoMainWindow::GetActiveViewWidget() {
     return static_cast<CentralViewWidget*>(m_mdiArea->activeSubWindow()->widget());
 }
 
-bool OccDemoMainWindow::AddViewDocItem(std::pair<CentralViewWidget*, int> item)
-{
-    if (m_viewDocMap.find(item.first) != m_viewDocMap.end())
-    {
+bool OccDemoMainWindow::AddViewDocItem(std::pair<CentralViewWidget*, QOccDocument*> item) {
+    if (_viewDocMap.find(item.first) != _viewDocMap.end()) {
         return false;
     }
-    m_viewDocMap.insert(item);
-    m_docViewMap.insert({item.second, item.first});
+    _viewDocMap.insert(item);
+    _docViewMap.insert({item.second, item.first});
     return true;
 }
 
-void OccDemoMainWindow::UpdateView()
-{
+void OccDemoMainWindow::UpdateView() {
     // emit 
 }
 
-std::map<CentralViewWidget*, int> OccDemoMainWindow::getViewDocMap() const
-{
-    return m_viewDocMap;
-}
 
-std::map<int, CentralViewWidget*> OccDemoMainWindow::getDocViewMap() const
-{
-    return m_docViewMap;
-}
-
-void OccDemoMainWindow::UpdateTreeView()
-{
+void OccDemoMainWindow::UpdateTreeView() {
     m_treeViewWidget->Update();
     m_treeViewWidget->load();
+}
+
+CentralViewWidget* OccDemoMainWindow::getCentralWidgetByDocument(QOccDocument* doc) {
+
+    if (_docViewMap.contains(doc)) return _docViewMap[doc];
+    return nullptr;
+}
+
+QOccDocument* OccDemoMainWindow::getDocumentByCentralWidget(CentralViewWidget* view) {
+    if (_viewDocMap.contains(view)) return _viewDocMap[view];
+    return nullptr;
 }

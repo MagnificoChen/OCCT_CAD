@@ -8,9 +8,8 @@
 #include "src/QDocumentManager.h"
 
 
-FeatureBase::FeatureBase()
-{
-    m_document = QDocumentManager::getInstance()->getCurrentDocument();
+FeatureBase::FeatureBase(QOccDocument* m_doc) {
+    m_document = m_doc;
 }
 
 FeatureBase::~FeatureBase()
@@ -18,38 +17,23 @@ FeatureBase::~FeatureBase()
 }
 
 
-void FeatureBase::addFeature()
-{
-    if(m_shape.IsNull()) return;
-
-    TDF_Label shapelabel = m_document->GetShapeRoot().NewChild();
-    Handle(XCAFDoc_ShapeTool) tool = XCAFDoc_ShapeTool::Set(m_document->GetShapeRoot());
-    tool->SetShape(shapelabel, m_shape);
-    SetLabel(shapelabel);
-
-    TNaming_Builder featureNaming(m_label);
-    featureNaming.Generated(m_shape);
-
-
-    m_document->getCentralWidget()->addShapeToRenderer(m_shape);
-}
-
-
-
 void FeatureBase::SetPosition(vtkVector3d pos)
 {
     m_pos = pos;
 
-    // 创建一个平移变换
-    gp_Trsf transformation2;
-    transformation2.SetTranslation(gp_Vec{ 0,20,0 });
-    // 应用变换
-    BRepBuilderAPI_Transform transform2(m_shape, transformation2, false , true);
-    TopLoc_Location loc(transformation2);
-    TNaming::Displace(m_label, loc, Standard_True);
+    gp_Trsf TRSF;
+    TRSF.SetTranslation(gp_Vec{ pos.GetX(),pos.GetY(),pos.GetZ() });
+    TopLoc_Location loc(TRSF);
+    TDF_LabelMap scope;
+    TDF_ChildIterator itchild;
+    for (itchild.Initialize(m_label,Standard_True); itchild.More();itchild.Next()) {
+        if (itchild.Value().IsAttribute(TNaming_NamedShape::GetID())) scope.Add(itchild.Value());
+    }
+    if (m_label.IsAttribute(TNaming_NamedShape::GetID())) scope.Add(m_label);
+    TDF_MapIteratorOfLabelMap it(scope);
+    for (;it.More();it.Next())
+        TNaming::Displace(it.Key(), loc, Standard_True);//with oldshapes
 
-    //发出一个消息，让OCAF刷新
-    //emit positionChanged();
 }
 
 void  FeatureBase::SetLabel(TDF_Label label)
@@ -62,14 +46,9 @@ TDF_Label FeatureBase::GetLabel()
     return m_label;
 }
 
-void FeatureBase::SetTag(int tag)
+Standard_Integer FeatureBase::GetTag()
 {
-    m_tag = tag;
-}
-
-int FeatureBase::GetTag()
-{
-    return m_tag;
+    return m_label.Tag();
 }
 
 

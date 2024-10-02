@@ -109,8 +109,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2wjt85"
-      binary: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2wjt85"
+      source: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xa6lvp"
+      binary: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xa6lvp"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -119,11 +119,11 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2wjt85'
+        Change Dir: 'E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xa6lvp'
         
-        Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_a268c
-        [1/2] "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_a268c.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_a268c.dir\\ /FS -c "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
-        [2/2] cmd.exe /C "cd . && "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a268c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_a268c.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_a268c.exe /implib:cmTC_a268c.lib /pdb:cmTC_a268c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_39f80
+        [1/2] "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_39f80.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_39f80.dir\\ /FS -c "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+        [2/2] cmd.exe /C "cd . && "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_39f80.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_39f80.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_39f80.exe /implib:cmTC_39f80.lib /pdb:cmTC_39f80.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -135,8 +135,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jljg43"
-      binary: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jljg43"
+      source: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2j1e15"
+      binary: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2j1e15"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -145,11 +145,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jljg43'
+        Change Dir: 'E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2j1e15'
         
-        Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_ffee3
-        [1/2] "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_ffee3.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_ffee3.dir\\ /FS -c "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
-        [2/2] cmd.exe /C "cd . && "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ffee3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_ffee3.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_ffee3.exe /implib:cmTC_ffee3.lib /pdb:cmTC_ffee3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_fc947
+        [1/2] "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_fc947.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_fc947.dir\\ /FS -c "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] cmd.exe /C "cd . && "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_fc947.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_fc947.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_fc947.exe /implib:cmTC_fc947.lib /pdb:cmTC_fc947.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -159,31 +159,30 @@ events:
       - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
       - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
-      - "C:/Users/85147/Desktop/VTK/VTK-build/lib/cmake/vtk-9.2/VTK-vtk-module-find-packages.cmake:162 (find_package)"
-      - "C:/Users/85147/Desktop/VTK/VTK-build/lib/cmake/vtk-9.2/vtk-config.cmake:152 (include)"
-      - "C:/Users/85147/Desktop/CodingEnv/VTK/VTK-build/vtk-config.cmake:1 (include)"
-      - "CMakeLists.txt:23 (find_package)"
+      - "C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:162 (find_package)"
+      - "C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "CMakeLists.txt:35 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vo71p9"
-      binary: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vo71p9"
+      source: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0i3cqc"
+      binary: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0i3cqc"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/85147/Desktop/VTK/VTK-build/lib/cmake/vtk-9.2/patches/99;C:/Users/85147/Desktop/VTK/VTK-build/lib/cmake/vtk-9.2"
+      CMAKE_MODULE_PATH: "C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/patches/99;C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vo71p9'
+        Change Dir: 'E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0i3cqc'
         
-        Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_d42cf
-        [1/2] "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_d42cf.dir\\src.c.obj /FdCMakeFiles\\cmTC_d42cf.dir\\ /FS -c E:\\CLionProjects\\OCCT-CAD\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-vo71p9\\src.c
-        FAILED: CMakeFiles/cmTC_d42cf.dir/src.c.obj 
-        "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_d42cf.dir\\src.c.obj /FdCMakeFiles\\cmTC_d42cf.dir\\ /FS -c E:\\CLionProjects\\OCCT-CAD\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-vo71p9\\src.c
-        E:\\CLionProjects\\OCCT-CAD\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-vo71p9\\src.c(1): fatal error C1083: 无法打开包括文件: “pthread.h”: No such file or directory
+        Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_442a4
+        [1/2] "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_442a4.dir\\src.c.obj /FdCMakeFiles\\cmTC_442a4.dir\\ /FS -c E:\\CLionProjects\\OCCT-CAD\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-0i3cqc\\src.c
+        FAILED: CMakeFiles/cmTC_442a4.dir/src.c.obj 
+        "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_442a4.dir\\src.c.obj /FdCMakeFiles\\cmTC_442a4.dir\\ /FS -c E:\\CLionProjects\\OCCT-CAD\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-0i3cqc\\src.c
+        E:\\CLionProjects\\OCCT-CAD\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-0i3cqc\\src.c(1): fatal error C1083: 无法打开包括文件: “pthread.h”: No such file or directory
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
@@ -193,32 +192,31 @@ events:
       - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
       - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
       - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:175 (_threads_check_lib)"
-      - "C:/Users/85147/Desktop/VTK/VTK-build/lib/cmake/vtk-9.2/VTK-vtk-module-find-packages.cmake:162 (find_package)"
-      - "C:/Users/85147/Desktop/VTK/VTK-build/lib/cmake/vtk-9.2/vtk-config.cmake:152 (include)"
-      - "C:/Users/85147/Desktop/CodingEnv/VTK/VTK-build/vtk-config.cmake:1 (include)"
-      - "CMakeLists.txt:23 (find_package)"
+      - "C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:162 (find_package)"
+      - "C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "CMakeLists.txt:35 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tskzbg"
-      binary: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tskzbg"
+      source: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sdbsxd"
+      binary: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sdbsxd"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/85147/Desktop/VTK/VTK-build/lib/cmake/vtk-9.2/patches/99;C:/Users/85147/Desktop/VTK/VTK-build/lib/cmake/vtk-9.2"
+      CMAKE_MODULE_PATH: "C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/patches/99;C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tskzbg'
+        Change Dir: 'E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sdbsxd'
         
-        Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_fb3a3
-        [1/2] "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_fb3a3.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_fb3a3.dir\\ /FS -c E:\\CLionProjects\\OCCT-CAD\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-tskzbg\\CheckFunctionExists.c
-        [2/2] cmd.exe /C "cd . && "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_fb3a3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_fb3a3.dir\\CheckFunctionExists.c.obj  /out:cmTC_fb3a3.exe /implib:cmTC_fb3a3.lib /pdb:cmTC_fb3a3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_fb3a3.exe 
-        cmd.exe /C "cd . && "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_fb3a3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_fb3a3.dir\\CheckFunctionExists.c.obj  /out:cmTC_fb3a3.exe /implib:cmTC_fb3a3.lib /pdb:cmTC_fb3a3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_fb3a3.dir\\CheckFunctionExists.c.obj /out:cmTC_fb3a3.exe /implib:cmTC_fb3a3.lib /pdb:cmTC_fb3a3.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_fb3a3.dir/intermediate.manifest CMakeFiles\\cmTC_fb3a3.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_e0ea6
+        [1/2] "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_e0ea6.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_e0ea6.dir\\ /FS -c E:\\CLionProjects\\OCCT-CAD\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-sdbsxd\\CheckFunctionExists.c
+        [2/2] cmd.exe /C "cd . && "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e0ea6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_e0ea6.dir\\CheckFunctionExists.c.obj  /out:cmTC_e0ea6.exe /implib:cmTC_e0ea6.lib /pdb:cmTC_e0ea6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_e0ea6.exe 
+        cmd.exe /C "cd . && "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e0ea6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_e0ea6.dir\\CheckFunctionExists.c.obj  /out:cmTC_e0ea6.exe /implib:cmTC_e0ea6.lib /pdb:cmTC_e0ea6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e0ea6.dir\\CheckFunctionExists.c.obj /out:cmTC_e0ea6.exe /implib:cmTC_e0ea6.lib /pdb:cmTC_e0ea6.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_e0ea6.dir/intermediate.manifest CMakeFiles\\cmTC_e0ea6.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: 无法打开文件“pthreads.lib”
         ninja: build stopped: subcommand failed.
         
@@ -229,32 +227,31 @@ events:
       - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
       - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
       - "E:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:176 (_threads_check_lib)"
-      - "C:/Users/85147/Desktop/VTK/VTK-build/lib/cmake/vtk-9.2/VTK-vtk-module-find-packages.cmake:162 (find_package)"
-      - "C:/Users/85147/Desktop/VTK/VTK-build/lib/cmake/vtk-9.2/vtk-config.cmake:152 (include)"
-      - "C:/Users/85147/Desktop/CodingEnv/VTK/VTK-build/vtk-config.cmake:1 (include)"
-      - "CMakeLists.txt:23 (find_package)"
+      - "C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:162 (find_package)"
+      - "C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "CMakeLists.txt:35 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2d5yv8"
-      binary: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2d5yv8"
+      source: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9xv475"
+      binary: "E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9xv475"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/85147/Desktop/VTK/VTK-build/lib/cmake/vtk-9.2/patches/99;C:/Users/85147/Desktop/VTK/VTK-build/lib/cmake/vtk-9.2"
+      CMAKE_MODULE_PATH: "C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/patches/99;C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2d5yv8'
+        Change Dir: 'E:/CLionProjects/OCCT-CAD/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9xv475'
         
-        Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_924d8
-        [1/2] "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_924d8.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_924d8.dir\\ /FS -c E:\\CLionProjects\\OCCT-CAD\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-2d5yv8\\CheckFunctionExists.c
-        [2/2] cmd.exe /C "cd . && "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_924d8.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_924d8.dir\\CheckFunctionExists.c.obj  /out:cmTC_924d8.exe /implib:cmTC_924d8.lib /pdb:cmTC_924d8.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_924d8.exe 
-        cmd.exe /C "cd . && "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_924d8.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_924d8.dir\\CheckFunctionExists.c.obj  /out:cmTC_924d8.exe /implib:cmTC_924d8.lib /pdb:cmTC_924d8.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_924d8.dir\\CheckFunctionExists.c.obj /out:cmTC_924d8.exe /implib:cmTC_924d8.lib /pdb:cmTC_924d8.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_924d8.dir/intermediate.manifest CMakeFiles\\cmTC_924d8.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): "E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -v cmTC_326c5
+        [1/2] "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_326c5.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_326c5.dir\\ /FS -c E:\\CLionProjects\\OCCT-CAD\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-9xv475\\CheckFunctionExists.c
+        [2/2] cmd.exe /C "cd . && "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_326c5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_326c5.dir\\CheckFunctionExists.c.obj  /out:cmTC_326c5.exe /implib:cmTC_326c5.lib /pdb:cmTC_326c5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_326c5.exe 
+        cmd.exe /C "cd . && "E:\\CLion 2023.3.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_326c5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_326c5.dir\\CheckFunctionExists.c.obj  /out:cmTC_326c5.exe /implib:cmTC_326c5.lib /pdb:cmTC_326c5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "E:\\Visual Studio 2022\\Visual Studio IDE\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_326c5.dir\\CheckFunctionExists.c.obj /out:cmTC_326c5.exe /implib:cmTC_326c5.lib /pdb:cmTC_326c5.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_326c5.dir/intermediate.manifest CMakeFiles\\cmTC_326c5.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: 无法打开文件“pthread.lib”
         ninja: build stopped: subcommand failed.
         

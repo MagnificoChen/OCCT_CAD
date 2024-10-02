@@ -57,7 +57,6 @@ private:
     std::map<QString, TopoDS_Shape> _shapeMap;
     std::map<QString, TopoDS_Shape> _newlyImportedShapeMap;
 
-
 signals:
 
 
@@ -99,7 +98,7 @@ public:
 
 private:
     int m_maxShapeID = 0;
-private:
+
     //document间的唯一标识符，递增
     int m_tag = 0;
 

@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_GridItemBase_t {
-    QByteArrayData data[6];
-    char stringdata0[82];
+    QByteArrayData data[8];
+    char stringdata0[103];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -37,12 +37,14 @@ QT_MOC_LITERAL(1, 13, 20), // "OnToolButton1Clicked"
 QT_MOC_LITERAL(2, 34, 0), // ""
 QT_MOC_LITERAL(3, 35, 5), // "index"
 QT_MOC_LITERAL(4, 41, 20), // "OnToolButton2Clicked"
-QT_MOC_LITERAL(5, 62, 19) // "OnMainButtonToggled"
+QT_MOC_LITERAL(5, 62, 19), // "OnMainButtonToggled"
+QT_MOC_LITERAL(6, 82, 10), // "EnableItem"
+QT_MOC_LITERAL(7, 93, 9) // "isEnabled"
 
     },
     "GridItemBase\0OnToolButton1Clicked\0\0"
     "index\0OnToolButton2Clicked\0"
-    "OnMainButtonToggled"
+    "OnMainButtonToggled\0EnableItem\0isEnabled"
 };
 #undef QT_MOC_LITERAL
 
@@ -52,7 +54,7 @@ static const uint qt_meta_data_GridItemBase[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -60,14 +62,18 @@ static const uint qt_meta_data_GridItemBase[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   29,    2, 0x0a /* Public */,
-       4,    1,   32,    2, 0x0a /* Public */,
-       5,    0,   35,    2, 0x0a /* Public */,
+       1,    1,   39,    2, 0x0a /* Public */,
+       4,    1,   42,    2, 0x0a /* Public */,
+       5,    0,   45,    2, 0x0a /* Public */,
+       6,    1,   46,    2, 0x0a /* Public */,
+       7,    0,   49,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Int,    3,
     QMetaType::Void, QMetaType::Int,    3,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Bool,    7,
+    QMetaType::Bool,
 
        0        // eod
 };
@@ -81,6 +87,9 @@ void GridItemBase::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 0: _t->OnToolButton1Clicked((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 1: _t->OnToolButton2Clicked((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 2: _t->OnMainButtonToggled(); break;
+        case 3: _t->EnableItem((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 4: { bool _r = _t->isEnabled();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
     }
@@ -115,13 +124,13 @@ int GridItemBase::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 5)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 3;
+        _id -= 5;
     }
     return _id;
 }

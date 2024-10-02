@@ -196,7 +196,7 @@ bool QDocumentManager::AddDocument(opencascade::handle<TDocStd_Document> doc)
 
     //将ViewDoc对应关系添加到OccDemo类中存储
     OccDemoMainWindow::getInstance()->AddViewDocItem({
-        OccDemoMainWindow::getInstance()->GetActiveViewWidget(), occDoc->GetTag()
+        OccDemoMainWindow::getInstance()->GetActiveViewWidget(), occDoc
     });
     OccDemoMainWindow::getInstance()->GetActiveViewWidget()->SetDocument(occDoc);
     occDoc->_setCentralWidget();
@@ -206,28 +206,15 @@ bool QDocumentManager::AddDocument(opencascade::handle<TDocStd_Document> doc)
 }
 
 
-bool QDocumentManager::OnChangeDocument(int tag)
+bool QDocumentManager::OnChangeCurDocument(QOccDocument* doc)
 {
-    qDebug() << "From QDocumentManager: OnChangeDocument Triggered...";
-    if (tag == m_currDocument->GetTag())
-    {
-        return true;
-    }
-    auto itF = std::find_if(m_docPtrArray.begin(), m_docPtrArray.end(), [tag](QOccDocument* doc)
-    {
-        return tag == doc->GetTag();
-    });
-    if (itF != m_docPtrArray.end())
-    {
-        m_currDocument = *itF;
-    }
-    else
-    {
-        qDebug() << "Maybe some error here, Doc/View relationship not found...";
+    qDebug() << "From QDocumentManager: OnChangeCurDocument Triggered...";
+    //查询不到Doc
+    if(doc == nullptr || find(m_docPtrArray.begin(),m_docPtrArray.end(), doc) == m_docPtrArray.end()){
+        qDebug() << "[ERROR] 查询不到Doc";
         return false;
     }
-
-
+    m_currDocument = doc;
     return true;
 }
 
@@ -249,4 +236,19 @@ std::string QDocumentManager::_getUniqueObjectName(const std::string& prefix, co
         i++;
     }
     return uniqueName;
+}
+
+QOccDocument *QDocumentManager::getDocumentByTag(int tag) {
+
+    auto itF = std::find_if(m_docPtrArray.begin(), m_docPtrArray.end(), [tag](QOccDocument* doc)
+    {
+        return tag == doc->GetTag();
+    });
+    if (itF != m_docPtrArray.end())
+    {
+        return *itF;
+    }
+    //else
+    qDebug() << "Maybe some error here, Doc/View relationship not found...";
+    return nullptr;
 };

@@ -26,7 +26,6 @@ public:
     //
     void DisableAllGeoSelector() override;
 private:
-    QOccGeoSelector* m_selector;
     QLabel* m_cubeRadiusLabel;
     QLabel* m_cubeXLabel;
     QLabel* m_cubeYLabel;

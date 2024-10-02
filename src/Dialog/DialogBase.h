@@ -8,6 +8,7 @@
 #include <QSpacerItem>
 #include <qevent.h>
 #include <QDialogButtonBox>
+#include "src/CentralViewWidget.h"
 
 // LineEdit
 
@@ -23,6 +24,9 @@ public:
     enum ButtonType { NoButton,Ok,OkCancel,All };
 public:
     DialogBase(QWidget *parent, ButtonType type = OkCancel);
+
+    DialogBase();
+
     virtual ~DialogBase() override;
     /**
      * 
@@ -38,6 +42,9 @@ public:
     virtual void OnApply() = 0;
     virtual void OnCancel() = 0;
 
+    CentralViewWidget* getOwnerWidget(){
+        return ownerWidget;
+    }
 
 public slots:
     //如果对话框的具体实现没有选择器，则不做如何操作
@@ -47,4 +54,6 @@ private:
     QHBoxLayout* m_buttonsLayout = nullptr;
     QDialogButtonBox* buttonBox = nullptr;
 
+
+    CentralViewWidget* ownerWidget = nullptr;
 };

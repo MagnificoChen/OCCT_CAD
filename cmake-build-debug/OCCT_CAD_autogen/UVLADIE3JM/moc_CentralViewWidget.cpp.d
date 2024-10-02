@@ -543,8 +543,8 @@ E:/CLionProjects/OCCT-CAD/cmake-build-debug/OCCT_CAD_autogen/UVLADIE3JM/moc_Cent
   C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/include/vtk-9.1/vtkkwiml/abi.h \
   C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/include/vtk-9.1/vtkkwiml/int.h \
   E:/CLionProjects/OCCT-CAD/src/CentralViewWidget.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccGeoSelector.h \
   E:/CLionProjects/OCCT-CAD/src/GlobalDefines.h \
-  E:/CLionProjects/OCCT-CAD/src/QOccGeoSelector.h \
   E:/CLionProjects/OCCT-CAD/src/Render/QOccVtkInteractorStyle.h \
   E:/CLionProjects/OCCT-CAD/src/Render/QOccVtkSelPipeline.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/QObject \

@@ -30,6 +30,7 @@
 #include <vtkRenderer.h>
 
 #include <IVtkOCC_Shape.hxx>
+#include <TDF_Label.hxx>
 #include <IVtkTools_DisplayModeFilter.hxx>
 #include <IVtkTools_ShapeObject.hxx>
 
@@ -37,24 +38,19 @@ IMPLEMENT_STANDARD_RTTIEXT(QOccVtkSelPipeline, Standard_Transient)
 
 //----------------------------------------------------------------------------
 QOccVtkSelPipeline::QOccVtkSelPipeline(
-	const TopoDS_Shape& theShape, const Standard_Integer theShapeID): _shape(theShape),_shapeID(theShapeID)
+	const TopoDS_Shape& theShape, const Standard_Integer theTag): _shape(theShape), _shapeID(theTag)
 {
-    /* ===========================
-	 *  Allocate involved filters
-	 * =========================== */
-
+    // 组织filter以供使用
     _filterMap.Bind(Filter_DM_Shape, vtkSmartPointer<IVtkTools_DisplayModeFilter>::New());
     _filterMap.Bind(Filter_DM_Hili, vtkSmartPointer<IVtkTools_DisplayModeFilter>::New());
     _filterMap.Bind(Filter_DM_Sel, vtkSmartPointer<IVtkTools_DisplayModeFilter>::New());
     _filterMap.Bind(Filter_SUB_Hili, vtkSmartPointer<IVtkTools_SubPolyDataFilter>::New());
     _filterMap.Bind(Filter_SUB_Sel, vtkSmartPointer<IVtkTools_SubPolyDataFilter>::New());
 
-    /* ========================
-	 *  Build primary pipeline
-	 * ======================== */
+    // 构建普通actor
     _actor = vtkSmartPointer<vtkActor>::New();
     IVtkOCC_Shape::Handle anIVtkShape = new IVtkOCC_Shape(theShape);
-    anIVtkShape->SetId(theShapeID);
+    anIVtkShape->SetId(theTag);
     _dataSource = vtkSmartPointer<IVtkTools_ShapeDataSource>::New();
     _dataSource->SetShape(anIVtkShape);
 
@@ -66,23 +62,19 @@ QOccVtkSelPipeline::QOccVtkSelPipeline(
     vtkSmartPointer<vtkLookupTable> aColorTable = IVtkTools::InitLookupTable();
     IVtkTools::InitShapeMapper(_mapper, aColorTable);
 
-    /* =================================
-	 *  Build pipeline for highlighting
-	 * ================================= */
-    IVtkTools_DisplayModeFilter* aDMFilterH
-        = IVtkTools_DisplayModeFilter::SafeDownCast(_filterMap.Find(Filter_DM_Hili));
+    //高亮actor，线框模式显示，用于高亮。
+    IVtkTools_DisplayModeFilter* aDMFilterH = IVtkTools_DisplayModeFilter::SafeDownCast(_filterMap.Find(Filter_DM_Hili));
     aDMFilterH->SetDisplayMode(IVtk_DisplayMode::DM_Wireframe);
-    IVtkTools_SubPolyDataFilter* aSUBFilterH
-        = IVtkTools_SubPolyDataFilter::SafeDownCast(_filterMap.Find(Filter_SUB_Hili));
+    IVtkTools_SubPolyDataFilter* aSUBFilterH = IVtkTools_SubPolyDataFilter::SafeDownCast(_filterMap.Find(Filter_SUB_Hili));
 
-    // No highlighting exists initially0
+    // No highlighting exists initially
     aSUBFilterH->SetInputConnection(_dataSource->GetOutputPort());
     aDMFilterH->SetInputConnection(aSUBFilterH->GetOutputPort());
 
     _hiliMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
     _hiliMapper->SetInputConnection(aDMFilterH->GetOutputPort());
 
-    // Create non-pickable actor
+    // 构建高亮actor，不可选择。
     _hiliActor = vtkSmartPointer<vtkActor>::New();
     _hiliActor->SetPickable(0);
     _hiliActor->SetVisibility(1);
@@ -95,14 +87,10 @@ QOccVtkSelPipeline::QOccVtkSelPipeline(
     _hiliActor->SetMapper(_hiliMapper);
     _hiliMapper->ScalarVisibilityOff();
 
-    /* ==============================
-	 *  Build pipeline for selection
-	 * ============================== */
-    IVtkTools_DisplayModeFilter* aDMFilterS
-        = IVtkTools_DisplayModeFilter::SafeDownCast(_filterMap.Find(Filter_DM_Sel));
+    //构建选择器的filter：线框+Sub_sel
+    IVtkTools_DisplayModeFilter* aDMFilterS = IVtkTools_DisplayModeFilter::SafeDownCast(_filterMap.Find(Filter_DM_Sel));
     aDMFilterH->SetDisplayMode(IVtk_DisplayMode::DM_Wireframe);
-    IVtkTools_SubPolyDataFilter* aSUBFilterS
-        = IVtkTools_SubPolyDataFilter::SafeDownCast(_filterMap.Find(Filter_SUB_Sel));
+    IVtkTools_SubPolyDataFilter* aSUBFilterS = IVtkTools_SubPolyDataFilter::SafeDownCast(_filterMap.Find(Filter_SUB_Sel));
 
     // No highlighting exists initially
     aSUBFilterS->SetInputConnection(_dataSource->GetOutputPort());
@@ -111,7 +99,7 @@ QOccVtkSelPipeline::QOccVtkSelPipeline(
     _selMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
     _selMapper->SetInputConnection(aDMFilterS->GetOutputPort());
 
-    // Create non-pickable actor
+    // 新建已选actor，此actor不可选择。
     _selActor = vtkSmartPointer<vtkActor>::New();
     _selActor->SetPickable(0);
     _selActor->SetVisibility(1);
@@ -123,6 +111,10 @@ QOccVtkSelPipeline::QOccVtkSelPipeline(
     // Set mapper for actor
     _selActor->SetMapper(_selMapper);
     _selMapper->ScalarVisibilityOff();
+}
+
+QOccVtkSelPipeline::~QOccVtkSelPipeline() {
+
 }
 
 //----------------------------------------------------------------------------
@@ -316,3 +308,5 @@ void QOccVtkSelPipeline::updateDataSource()
     _selActor->SetMapper(_selMapper);
     _selMapper->ScalarVisibilityOff();
 }
+
+

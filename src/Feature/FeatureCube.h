@@ -1,12 +1,19 @@
 ﻿#pragma once
-#include "FeatureBase.h"
-
-class FeatureCube : public FeatureBase
+#include "FeatureIsolate.h"
+#include <BRepPrimAPI_MakeBox.hxx>
+class FeatureCube : public FeatureIsolate
 {
 public:
-    FeatureCube();
+
+    FeatureCube(QOccDocument* mDoc, double x, double y, double z);
+
     ~FeatureCube();
+
+    void addFeature() override;
+
 private:
+    BRepPrimAPI_MakeBox box;
+
     double x ;
     double y ;
     double z ;

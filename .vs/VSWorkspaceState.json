@@ -5,8 +5,13 @@
     ]
   },
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\Dialog",
+    "\\src\\Feature",
+    "\\src\\Frame",
+    "\\src\\ModelTree",
+    "\\src\\Render"
   ],
-  "SelectedNode": "\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }

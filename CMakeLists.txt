@@ -27,7 +27,8 @@ if (Qt5_FOUND)
     # 添加资源文件
 endif ()
 
-set(RCC_FILES "${PROJECT_SOURCE_DIR}/image/resource.qrc")
+set(RCC_FILES "${PROJECT_SOURCE_DIR}/image/resource.qrc"
+)
 
 
 #查找VTK
@@ -75,6 +76,8 @@ file(GLOB SOURCES
         ${PROJECT_SOURCE_DIR}/src/Dialog/Components/*.cpp
         ${PROJECT_SOURCE_DIR}/src/ModelTree/*.h
         ${PROJECT_SOURCE_DIR}/src/ModelTree/*.cpp
+        ${PROJECT_SOURCE_DIR}/src/Frame/*.h
+        ${PROJECT_SOURCE_DIR}/src/Frame/*.cpp
         ${PROJECT_SOURCE_DIR}/src/Feature/*.h
         ${PROJECT_SOURCE_DIR}/src/Feature/*.cpp
         ${PROJECT_SOURCE_DIR}/src/Render/*.h

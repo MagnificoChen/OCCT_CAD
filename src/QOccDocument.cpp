@@ -56,7 +56,7 @@ void QOccDocument::_setCentralWidget()
     {
         qDebug() << "warning: reassign m_widget";
     }
-    m_widget = OccDemoMainWindow::getInstance()->getDocViewMap()[m_tag];
+    m_widget = OccDemoMainWindow::getInstance()->getCentralWidgetByDocument(this);
 }
 
 void QOccDocument::SetTag(int tag)

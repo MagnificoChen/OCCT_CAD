@@ -489,8 +489,12 @@ OCCT_CAD_autogen/timestamp: \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopTools_MapOfShape.hxx \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopTools_SequenceOfShape.hxx \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopTools_ShapeMapHasher.hxx \
+  C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS.hxx \
+  C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS.lxx \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_Edge.hxx \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_Face.hxx \
+  C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_HShape.hxx \
+  C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_HShape.lxx \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_ListOfShape.hxx \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_Shape.hxx \
   C:/Users/85147/Desktop/CodingEnv/OpenCascade/OCCT-install-release/inc/TopoDS_TShape.hxx \
@@ -711,17 +715,40 @@ OCCT_CAD_autogen/timestamp: \
   C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/vtkObjectFactory.cmake \
   C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/lib/cmake/vtk-9.1/vtkTopologicalSort.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/bin/cmake.exe \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompiler.cmake.in \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompiler.cmake.in \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCompilerIdDetection.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineRCCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeFindBinUtils.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseArguments.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitIncludeInfo.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeParseLibraryArchitecture.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCCompiler.cmake.in \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystem.cmake.in \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCompilerCommon.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestRCCompiler.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCCompilerFlag.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake \
@@ -730,10 +757,61 @@ OCCT_CAD_autogen/timestamp: \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckSourceCompiles.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ADSP-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Borland-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Bruce-C-DetermineCompiler.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Compaq-C-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Cray-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GHS-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/HP-C-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IAR-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Intel-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/LCC-C-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/MSVC-C.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/MSVC-CXX.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/MSVC-DetermineCompiler.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/MSVC.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/PGI-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/PathScale-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SCO-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SDCC-C-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SunPro-C-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/TI-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Tasking-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/Watcom-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XL-C-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XLClang-C-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/zOS-C-DetermineCompiler.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalData.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake \
@@ -742,6 +820,8 @@ OCCT_CAD_autogen/timestamp: \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake \
+  E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Determine-CXX.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-MSVC-C.cmake \
   E:/CLion\ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-MSVC-CXX.cmake \
@@ -756,14 +836,24 @@ OCCT_CAD_autogen/timestamp: \
   E:/CLionProjects/OCCT-CAD/image/resource.qrc \
   E:/CLionProjects/OCCT-CAD/src/CentralViewWidget.cpp \
   E:/CLionProjects/OCCT-CAD/src/CentralViewWidget.h \
-  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/GridItemBase.cpp \
-  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/GridItemBase.h \
-  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/GridItemGeoSelector.cpp \
-  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/GridItemGeoSelector.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccEdgeSelector.cpp \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccEdgeSelector.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccFaceSelector.cpp \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccFaceSelector.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccGeoSelector.cpp \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccGeoSelector.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccPointSelector.cpp \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccPointSelector.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccShellSelector.cpp \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccShellSelector.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccVertexSelector.cpp \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccVertexSelector.h \
   E:/CLionProjects/OCCT-CAD/src/Dialog/DialogBase.cpp \
   E:/CLionProjects/OCCT-CAD/src/Dialog/DialogBase.h \
   E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureBase.cpp \
   E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureBase.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureChamfer.cpp \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureChamfer.h \
   E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureCube.cpp \
   E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureCube.h \
   E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureCylinder.cpp \
@@ -772,14 +862,24 @@ OCCT_CAD_autogen/timestamp: \
   E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureSphere.h \
   E:/CLionProjects/OCCT-CAD/src/Dialog/DialogInputPosition.cpp \
   E:/CLionProjects/OCCT-CAD/src/Dialog/DialogInputPosition.h \
+  E:/CLionProjects/OCCT-CAD/src/Feature/FeatureAttach.cpp \
+  E:/CLionProjects/OCCT-CAD/src/Feature/FeatureAttach.h \
   E:/CLionProjects/OCCT-CAD/src/Feature/FeatureBase.cpp \
   E:/CLionProjects/OCCT-CAD/src/Feature/FeatureBase.h \
+  E:/CLionProjects/OCCT-CAD/src/Feature/FeatureChamfer.cpp \
+  E:/CLionProjects/OCCT-CAD/src/Feature/FeatureChamfer.h \
   E:/CLionProjects/OCCT-CAD/src/Feature/FeatureCube.cpp \
   E:/CLionProjects/OCCT-CAD/src/Feature/FeatureCube.h \
   E:/CLionProjects/OCCT-CAD/src/Feature/FeatureCylinder.cpp \
   E:/CLionProjects/OCCT-CAD/src/Feature/FeatureCylinder.h \
+  E:/CLionProjects/OCCT-CAD/src/Feature/FeatureIsolate.cpp \
+  E:/CLionProjects/OCCT-CAD/src/Feature/FeatureIsolate.h \
+  E:/CLionProjects/OCCT-CAD/src/Feature/FeatureMerge.cpp \
+  E:/CLionProjects/OCCT-CAD/src/Feature/FeatureMerge.h \
   E:/CLionProjects/OCCT-CAD/src/Feature/FeatureSphere.cpp \
   E:/CLionProjects/OCCT-CAD/src/Feature/FeatureSphere.h \
+  E:/CLionProjects/OCCT-CAD/src/Frame/MessageRouter.cpp \
+  E:/CLionProjects/OCCT-CAD/src/Frame/MessageRouter.h \
   E:/CLionProjects/OCCT-CAD/src/GlobalDefines.h \
   E:/CLionProjects/OCCT-CAD/src/ModelTree/DocumentTreeItemModel.cpp \
   E:/CLionProjects/OCCT-CAD/src/ModelTree/DocumentTreeItemModel.h \
@@ -793,8 +893,6 @@ OCCT_CAD_autogen/timestamp: \
   E:/CLionProjects/OCCT-CAD/src/QDocumentManager.h \
   E:/CLionProjects/OCCT-CAD/src/QOccDocument.cpp \
   E:/CLionProjects/OCCT-CAD/src/QOccDocument.h \
-  E:/CLionProjects/OCCT-CAD/src/QOccGeoSelector.cpp \
-  E:/CLionProjects/OCCT-CAD/src/QOccGeoSelector.h \
   E:/CLionProjects/OCCT-CAD/src/QOccPlanePointSelector.cpp \
   E:/CLionProjects/OCCT-CAD/src/QOccPlanePointSelector.h \
   E:/CLionProjects/OCCT-CAD/src/Render/QOccVtkInteractorStyle.cpp \
@@ -809,7 +907,6 @@ OCCT_CAD_autogen/timestamp: \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/QObject \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/QPointer \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/QScopedPointer \
-  E:/Qt/5.15.2/msvc2019_64/include/QtCore/QSignalMapper \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/QVariant \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/QtGlobal \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/qabstractitemmodel.h \
@@ -867,7 +964,6 @@ OCCT_CAD_autogen/timestamp: \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/qshareddata.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/qsharedpointer.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/qsharedpointer_impl.h \
-  E:/Qt/5.15.2/msvc2019_64/include/QtCore/qsignalmapper.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/qsize.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/qstring.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/qstringalgorithms.h \
@@ -925,6 +1021,7 @@ OCCT_CAD_autogen/timestamp: \
   E:/Qt/5.15.2/msvc2019_64/include/QtGui/qwindowdefs.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtGui/qwindowdefs_win.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/QAction \
+  E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/QComboBox \
   E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/QDialog \
   E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/QDialogButtonBox \
   E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/QDockWidget \
@@ -958,6 +1055,7 @@ OCCT_CAD_autogen/timestamp: \
   E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qaction.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qactiongroup.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qboxlayout.h \
+  E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qcombobox.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qdialog.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qdialogbuttonbox.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtWidgets/qdockwidget.h \

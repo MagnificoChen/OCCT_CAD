@@ -672,18 +672,18 @@ E:/CLionProjects/OCCT-CAD/out/build/OCCT_CAD_autogen/UVLADIE3JM/moc_QDocumentMan
   C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/include/vtk-9.1/vtkkwiml/abi.h \
   C:/Users/85147/Desktop/CodingEnv/VTK/VTK-install-debug/include/vtk-9.1/vtkkwiml/int.h \
   E:/CLionProjects/OCCT-CAD/src/CentralViewWidget.h \
-  E:/CLionProjects/OCCT-CAD/src/DialogBase.h \
-  E:/CLionProjects/OCCT-CAD/src/DialogFeatureBase.h \
-  E:/CLionProjects/OCCT-CAD/src/DialogFeatureCube.h \
-  E:/CLionProjects/OCCT-CAD/src/FeatureBase.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/Components/QOccGeoSelector.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/DialogBase.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureBase.h \
+  E:/CLionProjects/OCCT-CAD/src/Dialog/DialogFeatureCube.h \
+  E:/CLionProjects/OCCT-CAD/src/Feature/FeatureBase.h \
   E:/CLionProjects/OCCT-CAD/src/GlobalDefines.h \
-  E:/CLionProjects/OCCT-CAD/src/LeftTreeViewWidget.h \
+  E:/CLionProjects/OCCT-CAD/src/ModelTree/LeftTreeViewWidget.h \
   E:/CLionProjects/OCCT-CAD/src/OccDemoMainWindow.h \
   E:/CLionProjects/OCCT-CAD/src/QDialogManager.h \
   E:/CLionProjects/OCCT-CAD/src/QOccDocument.h \
-  E:/CLionProjects/OCCT-CAD/src/QOccGeoSelector.h \
-  E:/CLionProjects/OCCT-CAD/src/QOccVtkInteractorStyle.h \
-  E:/CLionProjects/OCCT-CAD/src/QOccVtkSelPipeline.h \
+  E:/CLionProjects/OCCT-CAD/src/Render/QOccVtkInteractorStyle.h \
+  E:/CLionProjects/OCCT-CAD/src/Render/QOccVtkSelPipeline.h \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/QDebug \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/QFile \
   E:/Qt/5.15.2/msvc2019_64/include/QtCore/QObject \
